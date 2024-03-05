@@ -1,0 +1,87 @@
+.h1Signin {
+    position: absolute;
+    left: 48%;
+    top: 20%;
+    color: #fff;
+    font-size: 50px;
+}
+
+.lblSignin {
+    position: absolute;
+    top: 37%;
+    left: 43%;
+    padding: 15px;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.lblSignin label {
+    color: red;
+    text-align: center;
+    display: block;
+}
+
+/* Style for the input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    appearance: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.lblSignin button {
+    background-color: #5865F2;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    position: relative;
+    left: 35%;
+    cursor: pointer;
+}
+
+.lblSignin button:hover {
+    background-color: #405bd4;
+}
+
+.PNoAccnt {
+    position: absolute;
+    left: 47%;
+    top: 63%;
+    color: #fff;
+}
+
+.linkSignIn {
+    text-decoration: underline;
+    color: #fff;
+    position: relative;
+    left: 35%;
+}
+
+.PYesAccnt
+{
+    position: absolute;
+    left: 48.5%;
+    top: 85%;
+    color: #fff;
+}
+
+.linkLogin
+{
+    text-decoration: underline;
+    color: #fff;
+    position: relative;
+    left: 35%;
+}

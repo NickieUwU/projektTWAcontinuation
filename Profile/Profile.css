@@ -1,0 +1,130 @@
+.whereamI {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    color: #fff;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    width: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+    .whereamI {
+        position: relative;
+        font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+}
+
+.User {
+    position: absolute;
+    left: 50%; /* Center the User div */
+    top: 50%; /* Center the User div */
+    transform: translate(-50%, -50%); /* Center the User div */
+    color: #fff;
+    height: 60%; /* Adjust the height as needed */
+    width: 50%; /* Adjust the width as needed */
+    padding: 20px; /* Add padding for better appearance */
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.PFP {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 18%;
+    left: 8%;
+}
+
+.PFP:hover
+{
+    cursor: pointer;
+}
+
+.User .Name, .User .Username, .User .Bio, .User .JoinedDate, .User .Action, .User .Followers, .User .Following {
+    position: absolute;
+    width: fit-content;
+    padding: 10px; /* Add padding for better appearance */
+    margin: 10px; /* Add margin for better appearance */
+}
+
+.User .Name {
+    top: 22%;
+    left: 22%;
+    font-size: x-large;
+}
+
+.User .Username {
+    top: 28%;
+    left: 22%;
+}
+
+.User .Bio {
+    top: 37%;
+    left: 22%;
+    max-width: 300px;
+    max-height: 100px;
+}
+
+.User .JoinedDate {
+    top: 25%;
+    left: 30%;
+}
+
+.User .Action {
+    top: 5%;
+    left: 80%;
+    height: fit-content;
+    width: fit-content;
+}
+
+.User .Followers {
+    top: 33%;
+    left: 22%;
+}
+
+.User .Following {
+    top: 33%;
+    left: 35%;
+}
+
+.Followers:hover, .Following:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.btnFollow
+{
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    height: fit-content;
+    width: fit-content;
+    padding: 2px;
+    font-size: medium;
+}
+
+.btnFollow:hover
+{
+    cursor: pointer;
+    background-color: #405bd4;
+}
+
+#IDedit
+{
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    height: fit-content;
+    width: fit-content;
+    padding: 2px;
+    font-size: medium;
+}
+
+#IDedit:hover
+{
+    cursor: pointer;
+    background-color: #405bd4;
+}

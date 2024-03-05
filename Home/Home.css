@@ -1,0 +1,17 @@
+.whereamI {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    color: #fff;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .whereamI
+    {
+      font-size: 10px;
+    }
+  }

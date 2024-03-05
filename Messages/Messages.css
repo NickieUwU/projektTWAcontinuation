@@ -1,0 +1,62 @@
+.whereamI
+{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    color: #fff;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    width: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+    .whereamI {
+      position: relative;
+      font-size: 10px;
+    }
+  }
+
+.layout
+{
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 12%;
+  left: 15%;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.layout .UsersMessage
+{
+  border-right: 2px solid gray;
+  width: 15%;
+  height: 98%;
+  padding-top: 10px;
+  padding-left: 10px;
+  resize: none;
+}
+
+#NewMessageRedirect
+{
+  width: fit-content;
+  height: fit-content;
+}
+
+#NewMessageRedirect:hover
+{
+  cursor: pointer;
+}
+
+.ChooseUser
+{
+  position: absolute;
+  top: 5.5%;
+  left: 1%;
+  background-color: #36393e;
+  border: 1px solid black;
+  width: 12%;
+  height: 80%;
+}

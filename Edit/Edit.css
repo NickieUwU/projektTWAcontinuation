@@ -1,0 +1,61 @@
+.whereamI {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    color: #fff;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    width: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+    .whereamI {
+        position: relative;
+        font-size: 20px;
+    }
+}
+
+.CreatePost {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    height: 60%;
+    width: 70%;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.CreatePost .txtContent {
+    width: 98%;
+    height: 80%;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #fff;
+    resize: none;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.txtContent::placeholder {
+    color: #fff;
+}
+
+.CreatePost .btnSubmit {
+    width: 10%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btnSubmit:hover
+{
+    cursor: pointer;
+}

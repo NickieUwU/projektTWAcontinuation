@@ -1,0 +1,110 @@
+  .post {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin: 0 auto; /* Center the div horizontally */
+    width: 400px; /* Set a width for the div */
+    height: 200px;
+    margin-bottom: 16px;
+    top: 15%;
+    left: 35%;
+    color: #fff;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5);
+    border-radius: 10px;
+  }  
+  
+  .PFP
+   {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid black;
+  }
+  
+  .PFP:hover
+  {
+    cursor: pointer;
+  }
+  
+  .post-info {
+    flex-direction: column;
+    margin-top: 64px;
+    margin-bottom: 16px;
+    width: fit-content;
+    position: absolute;
+    left: 20%;
+    top: -17%;
+  }
+  
+  .name, .handler, .date {
+    margin: 0;
+  }
+
+  .name:hover
+  {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .post-text {
+    margin: 0;
+    background-color: transparent;
+    border: transparent;
+    height: 85px;
+    resize: none;
+    color: #fff;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .post-text:focus
+  {
+    border: transparent;
+  }
+
+  .date
+  {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 1%;
+    right: 10%;
+  }
+
+  .actions 
+  {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  .post .actions
+  {
+    position: absolute;
+    left: 5%;
+  }
+  .actions i 
+  {
+    font-size: 24px;
+    color: #fff;
+    margin-right: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .post .comments
+  {
+    position: absolute;
+    left: 20%;
+  }
+
+  .btnHeart:hover
+  {
+    cursor: pointer;
+  }

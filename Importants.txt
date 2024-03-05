@@ -1,0 +1,1 @@
+Margin outside, padding inside of the element

@@ -1,0 +1,30 @@
+.whereamI {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    color: #fff;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    width: fit-content;
+}
+
+.Notifications {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    height: 80%;
+    width: 40%; /* Adjust width as needed */
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    overflow: auto;
+}
+
+.PFP
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
