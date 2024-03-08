@@ -115,7 +115,9 @@
     var limit = <?php echo $LIMIT; ?>;
 
     $(document).ready(() => {
-        $("#IDMoreComments").click(() => {
+        $("#IDMoreComments").click((e) => {
+            e.preventDefault();
+            var currentPosition = $(window).scrollTop();
             limit += 5;
             $.ajax({
                 type: "POST",
@@ -129,6 +131,7 @@
                 success: (resp) => {
                     console.log(resp);
                     document.body.innerHTML = resp;
+                    $(window).scrollTop(currentPosition);
                 },
                 error: (xhr, status, error) => {
                     console.log(xhr.responseText);

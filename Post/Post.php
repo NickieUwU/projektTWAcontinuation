@@ -92,7 +92,6 @@ $(document).ready(() => {
         let IsLiked = <?php echo $IsLiked; ?>;
         $("#IDheart").click((e) => {
             IsLiked = (IsLiked == 0) ? 1 : 0;
-            e.preventDefault();
             $.ajax({
                 type: "POST",
                 url: "Home.php",
