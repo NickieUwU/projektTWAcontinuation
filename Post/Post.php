@@ -100,7 +100,6 @@ $(document).ready(() => {
         tempInput.select();
         document.execCommand('copy');
         document.body.removeChild(tempInput);
-        alert('Copied!');
     });
         let IsLiked = <?php echo $IsLiked; ?>;
         $("#IDheart").click((e) => {
