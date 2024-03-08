@@ -98,10 +98,22 @@
     width: fit-content;
   }
 
+  .post .heart
+  {
+    position: absolute;
+    left: 5%;
+  }
+
   .post .comments
   {
     position: absolute;
-    left: 20%;
+    left: 40%;
+  }
+
+  .post .share
+  {
+    position: absolute;
+    left: 80%;
   }
 
   .btnHeart:hover

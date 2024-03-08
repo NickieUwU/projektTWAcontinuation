@@ -117,7 +117,6 @@
     $(document).ready(() => {
         $("#IDMoreComments").click((e) => {
             e.preventDefault();
-            var currentPosition = $(window).scrollTop();
             limit += 5;
             $.ajax({
                 type: "POST",
@@ -129,9 +128,7 @@
                     LIMIT: limit
                 },
                 success: (resp) => {
-                    console.log(resp);
                     document.body.innerHTML = resp;
-                    $(window).scrollTop(currentPosition);
                 },
                 error: (xhr, status, error) => {
                     console.log(xhr.responseText);

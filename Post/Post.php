@@ -74,6 +74,9 @@
                 <i class="bi bi-chat-left-dots-fill"></i>
         </a> 
         </div>
+        <div class="share">
+            <i class="bi bi-share-fill"></i>
+        </div>
     </div>
     <div class="menu">
         <?php
@@ -89,6 +92,16 @@
 <script>
 //You have to click twice the button
 $(document).ready(() => {
+    $(".share").click(() => {
+        const postLink = "http://localhost/projektTWA/ExpandedPost/ExpandedPost.php?Post=<?php echo $Post_ID; ?>&username=<?php echo $_SESSION["username"]; ?>";
+        const tempInput = document.createElement('input');
+        tempInput.value = postLink;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempInput);
+        alert('Copied!');
+    });
         let IsLiked = <?php echo $IsLiked; ?>;
         $("#IDheart").click((e) => {
             IsLiked = (IsLiked == 0) ? 1 : 0;
