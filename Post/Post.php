@@ -87,24 +87,7 @@
 </div> 
 <br>
 <script>
-/*document.getElementById('likeForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    var form = event.target;
-    var formData = new FormData(form);
-
-    var xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action, true);
-    xhr.onload = function() {
-        if (this.status == 200) 
-        {
-                var btnHeart = document.getElementById("btnHeartID");
-                btnHeart.innerText = (btnHeart.innerText === "like") ? "liked" : "like";
-        }
-    };
-    xhr.send(formData);
-});*/
-
+//You have to click twice the button
 $(document).ready(() => {
         let IsLiked = <?php echo $IsLiked; ?>;
         $("#IDheart").click((e) => {
