@@ -40,7 +40,8 @@
                         $FollowerUsername = $user["Username"];
                         echo '
                             <div class="Notification">
-                                <img src="../DefaultPFP/DefaultPFP.png" class="PFP"><br>
+                                <a href="../Profile/Profile.php?username='.$FollowerUsername.'"><img src="../DefaultPFP/DefaultPFP.png" class="PFP"></a><br>
+                                <i class="bi bi-person-fill"></i>
                                 <a href="../Profile/Profile.php?username='.$FollowerUsername.'">'.$FollowerName.'</a> has just followed you!
                             </div>
                             <hr>
