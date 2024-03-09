@@ -5,7 +5,7 @@
     require("../ConnectionChecker.php");
     require("../ValidateUser.php");
     Db::connect("localhost", "sin", "root", "");
-    $LoggedID = Db::query("SELECT ID FROM users WHERE Username=?", $username);
+    $LoggedUser = Db::queryOne("SELECT * FROM users WHERE Username=?", $username);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,31 +21,30 @@
 </head>
 <body>
     <div class="whereamI">
-           <label class="lblMyProfile">Notifications</label>
+        <label class="lblMyProfile">Notifications</label>
     </div>
     <?php
         include("../Nav/Nav.php");
     ?>
     <div class="Notifications">
-        
+        <?php
+            $follows = Db::queryAll("SELECT * FROM follow WHERE LoggedID=?", $LoggedUser["ID"]);
+            foreach($follows as $follow)
+            {
+                if($follow["IsChecked"] == 0)
+                {
+                    $users = Db::queryAll("SELECT * FROM users WHERE ID=?", $follow["ID"]);
+                    foreach($users as $user)
+                    {
+                        echo $user["Username"]."<br>";
+                    }
+                }
+            }
+        ?>
     </div>
 </body>
 </html>
 
 <script>
-    document.addEventListener("close", () => {
-        /*var form = event.target;
-        var formData = new FormData(form);
-
-        var xhr = new XMLHttpRequest();
-        xhr.open(form.method, form.action, true);
-        xhr.onload = function() {
-            if (this.status == 200) 
-            {
-                    var btnHeart = document.getElementById("btnHeartID");
-                    btnHeart.innerText = (btnHeart.innerText === "like") ? "liked" : "like";
-            }
-        };
-        xhr.send(formData);*/
-    });
+    
 </script>
