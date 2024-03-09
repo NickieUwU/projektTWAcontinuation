@@ -28,13 +28,6 @@
         include("../Nav/Nav.php");
     ?>
     <div class="Notifications">
-        <div class="Checked">
-            <form action="?username=<?php echo $_SESSION["username"]; ?>" method="post">
-                <button name="Seen">
-                    Seen
-                </button>
-            </form>
-        </div>
         <?php
             $follows = Db::queryAll("SELECT * FROM follow WHERE LoggedID=?", $LoggedUser["ID"]);
             foreach($follows as $follow)
@@ -48,11 +41,6 @@
                         $FollowerID = $user["ID"];
                         $FollowerName = $user["Name"];
                         $FollowerUsername = $user["Username"];
-                        if(isset($_POST["Seen"]))
-                        {
-                            $data = array("IsChecked" => 1);
-                            Db::update("follow", $data, "WHERE ID=? AND LoggedID=? AND IsChecked=?", $FollowerID, $LoggedUser["ID"], 0);
-                        }
                         echo '
                             <div class="Notification">
                                 <a href="../Profile/Profile.php?username='.$FollowerUsername.'"><img src="../DefaultPFP/DefaultPFP.png" class="PFP"></a><br>
