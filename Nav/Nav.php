@@ -8,6 +8,9 @@
     <a class="navmenu" href="../CreatePost/CreatePost.php?username=<?php echo $_SESSION["username"];?>">
         <i class="bi bi-pencil-fill"></i> Create
     </a><br>
+    <a class="navmenu" href="../Messages/Messages.php?username=<?php echo $_SESSION["username"];?>">
+        <i class="bi bi-envelope-fill"></i> Messages
+    </a><br>
     <a class="navmenu" href="../Notifications/Notifications.php?username=<?php echo $_SESSION["username"]; ?>">
         <i class="bi bi-bell"></i> Notifications
     </a>
