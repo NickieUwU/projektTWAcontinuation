@@ -11,7 +11,15 @@
         <tbody>
             <tr>
                 <td class="report">
-                    <span id="IDdelete-content" name="NameDeleteContent" class="delete-content">delete</span>                    
+                    <span class="bi bi-flag-fill"></span>
+                </td>
+                <td>
+                    <span>report</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>block</span>
                 </td>
             </tr>
         </tbody>

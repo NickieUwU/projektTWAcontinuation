@@ -9,12 +9,13 @@
     color: #ff0000;
 }
 
-.delete
+td
 {
     background-color: #808080;
+    border-color: #808080;
 }
 
-.delete:hover
+td:hover
 {
     background-color: #666666;
 }
