@@ -90,6 +90,11 @@
                 $postID = $Post_ID;
                 include("../Post/PostMenuLoggedUser.php");
             }
+            else
+            {
+                $postID = $Post_ID;
+                include("../Post/PostMenu.php");
+            }
         ?>
     </div>
 </div> 
