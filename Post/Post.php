@@ -41,6 +41,8 @@
     {
         $IsLiked = "0";
     }
+
+    $LikesCount = Db::querySingle("SELECT COUNT(*) FROM likes WHERE Post_ID=?",  $Post_ID);
     
     $BtnText;
 ?>
@@ -68,6 +70,7 @@
                 {
                     echo '<i class="bi bi-heart-fill"></i>';
                 }
+                echo $LikesCount;
             ?>
         </div>
         <div class="comments">
