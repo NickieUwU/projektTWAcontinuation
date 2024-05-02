@@ -43,6 +43,7 @@
     }
 
     $LikesCount = Db::querySingle("SELECT COUNT(*) FROM likes WHERE Post_ID=?",  $Post_ID);
+    $CommentsCount = Db::querySingle("SELECT COUNT(*) FROM comments WHERE Post_ID=?", $Post_ID);
     
     $BtnText;
 ?>
@@ -75,7 +76,7 @@
         </div>
         <div class="comments">
         <a href="../ExpandedPost/ExpandedPost.php?Post=<?php echo $Post_ID; ?>&username=<?php echo $_SESSION["username"]; ?>">
-                <i class="bi bi-chat-left-dots-fill"></i>
+                <i class="bi bi-chat-left-dots-fill"></i> <?php echo $CommentsCount; ?>
         </a> 
         </div>
         <div class="share">
@@ -120,11 +121,11 @@ $(document).ready(() => {
                     console.log(resp);
                     if (IsLiked == 0) 
                     {
-                        $("#IDheart").html('<i class="bi bi-heart"></i>');
+                        $("#IDheart").html('<i class="bi bi-heart"></i><?php echo $LikesCount++; ?>');
                     } 
                     else if (IsLiked == 1) 
                     {
-                        $("#IDheart").html('<i class="bi bi-heart-fill"></i>');
+                        $("#IDheart").html('<i class="bi bi-heart-fill"></i><?php echo $LikesCount--; ?>');
                     }
                 },
                 error: (xhr, status, error) => {
