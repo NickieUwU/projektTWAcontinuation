@@ -27,6 +27,7 @@
     foreach($_LoggedUser as $LoggedUser)
     {
         $LoggedID = $LoggedUser["ID"];
+        $LoggedUsername = $LoggedUser["Username"];
     }
     $Likes = Db::queryAll("SELECT * FROM likes WHERE ID=? AND Post_ID=?", $LoggedID, $Post_ID);
     if($Likes)
@@ -80,7 +81,7 @@
     </div>
     <div class="menu">
         <?php
-            if($LoggedID == $ID)
+            if($LoggedID == $ID || $LoggedUsername == "@admin")
             {
                 $postID = $Post_ID;
                 include("../Post/PostMenuLoggedUser.php");
@@ -90,7 +91,7 @@
 </div> 
 <br>
 <script>
-//You have to click twice the button
+//You have to click the button twice
 $(document).ready(() => {
     $(".share").click(() => {
         const postLink = "http://localhost/projektTWA/ExpandedPost/ExpandedPost.php?Post=<?php echo $Post_ID; ?>&username=<?php echo $_SESSION["username"]; ?>";
