@@ -5,7 +5,8 @@
     left: 95%;
 }
 
-.report {
+.divs 
+{
     display: flex;
     align-items: center; /* Vertically center the content */
 }
@@ -18,4 +19,15 @@
 div:hover
 {
     cursor: pointer;
+}
+
+.block
+{
+    border-top: 1px solid white;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
 }

@@ -13,3 +13,9 @@ function toggleMenu() {
         IsMenuVisible = false;
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector("#block").addEventListener("click", () => {
+        alert("Free Speech!");
+    });
+});
