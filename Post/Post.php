@@ -1,7 +1,6 @@
 <?php
     require("../DbHandler.php");
     Db::connect("localhost", "sin", "root", "");
-
     // Get a random user ID
 
 

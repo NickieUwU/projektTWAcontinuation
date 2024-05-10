@@ -7,7 +7,7 @@
     <span class="classMenuDots bi bi-three-dots-vertical" id="MenuDots" onclick="toggleMenu()"></span>
     <div id="MenuTable" class="table table-dark" style="display: none;">
         <div class="divs report">
-            <a href="../Reports/Report/Report.php">
+            <a href="../Reports/Report.php?Post=<?php echo $Post_ID?>&username=<?php echo $_SESSION["username"]; ?>">
                 <i class="icons bi bi-flag-fill"></i>
                 <span>report</span>
             </a>
