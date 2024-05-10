@@ -4,3 +4,18 @@
     top: 5%;
     left: 95%;
 }
+
+.report {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+}
+
+.icons
+{
+    margin-right: 5px;
+}
+
+div:hover
+{
+    cursor: pointer;
+}
