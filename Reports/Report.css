@@ -1,0 +1,33 @@
+.whereamI {
+    position: absolute;
+    top: 0%;
+    left: 37.5%;
+    color: #fff;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    width: fit-content;
+}
+  
+@media screen and (max-width: 768px) {
+  .whereamI
+  {
+    font-size: 10px;
+  }
+}
+
+.Report
+{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+
+
+.ReportOptions /*Select element*/
+{
+    background-color: #36393e;
+    border-color: #36393e;
+    color: white;
+}
