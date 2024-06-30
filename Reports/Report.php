@@ -19,7 +19,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sin / Report</title>
+    <title>Report / Connectify</title>
     <link rel="shortcut icon" type="x-icon" href="../Logo/Logo.png">
     <link rel="stylesheet" href="../UniversalCSS/UniversalStyles.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="../Nav/Nav.css?v=<?php echo time(); ?>">
